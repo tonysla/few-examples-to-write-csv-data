@@ -19,7 +19,7 @@ pred_model <- predict(mod_fit, newdata = test, type = 'response')
 test$new_column <- pred_model
 
 # write the test set with the new column as csv, or 
-# s tab-delimited values example above
+# as tab-delimited values example above
 write.csv(test, 'added_column.csv', row.names = F)
 
 # write two different data set/rows into one table
