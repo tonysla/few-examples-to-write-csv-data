@@ -25,3 +25,11 @@ Below are some more arguments for `write.table()` function copied from RStudio.
             eol = "\n", na = "NA", dec = ".", row.names = TRUE,
             col.names = TRUE, qmethod = c("escape", "double"),
             fileEncoding = "")
+
+The `fileEncoding = ""` argument above will not work for `write.csv()` function. Read in more details from RStudio documentation. 
+
+Use the below in order to write two different data set/rows into one table or csv file.
+
+        write.csv(rbind(train, test), 'iris_two.csv', row.names = F)
+        
+You can enter as many variables or datasets inside the `rbind()` function. Just keep in mind that variables or datasets need to share common column names in order to write them into one table/csv file. 
