@@ -32,4 +32,4 @@ Use the below in order to write two different data set/rows into one table or cs
 
         write.csv(rbind(train, test), 'iris_two.csv', row.names = F)
         
-You can enter as many variables or datasets inside the `rbind()` function. Just keep in mind that variables or datasets need to share common column names in order to write them into one table/csv file. 
+You can enter as many variables or datasets inside the `rbind()` function. Just keep in mind that variables or datasets need to share common column names in order to write them into one table/csv file. Function `rbind()` works the same for `write.table()` as it does for `write.csv()` case above.  
