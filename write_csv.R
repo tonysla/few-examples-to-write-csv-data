@@ -24,3 +24,6 @@ write.csv(test, 'added_column.csv', row.names = F)
 
 # write two different data set/rows into one table
 write.csv(rbind(train, test), 'iris_two.csv', row.names = F)
+
+# write two different data set/columns into one table
+write.csv(cbind(train, test), 'iris_two.csv', row.names = F)
